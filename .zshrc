@@ -75,6 +75,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_DIR_TRUNC=0
+SPACESHIP_DIR_TRUNC_REPO=false
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
