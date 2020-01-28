@@ -14,5 +14,21 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 echo "Default shell..."
 echo $SHELL
 
+echo "Installing powerline fonts..."
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+
+# you'll need to manually change the font in the Mac to use e.g. Fira Code
+
 echo "Installing spaceship theme..."
-curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh | zsh
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+
+#Symlink spaceship.zsh-theme to your oh-my-zsh custom themes directory:
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+# Set ZSH_THEME="spaceship" in your .zshrc
