@@ -100,3 +100,18 @@ SPACESHIP_DIR_TRUNC_REPO=false
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias goland='/usr/local/bin/goland'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# needed so that when running echo, it does not treat non-alphanumeric characters as special characters
+# when it should be just text e.g. [ap-southeast-2]
+alias echo="noglob echo"
+
+export PATH=$PATH:$GOPATH/bin
+
+# so that viewing git logs will not open in a "new screen"
+unset LESS;
