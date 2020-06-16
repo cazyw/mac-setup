@@ -11,3 +11,6 @@ brew cask install rectangle
 
 echo "Installing alfred..."
 brew cask install alfred
+
+echo "Installing sourcetree..."
+brew cask install sourcetree
