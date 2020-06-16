@@ -4,7 +4,7 @@ echo "Installing bloomrpc..."
 brew cask install bloomrpc
 
 echo "Installing pgadmin4..."
-brew cask install bloomrpc
+brew cask install pgadmin4
 
 # echo "Installing postman..."
 #brew cask install postman
