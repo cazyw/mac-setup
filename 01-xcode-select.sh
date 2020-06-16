@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# install xcode-select
+# install xcode-select - not required if installing homebrew as that will install xcode
 
 echo "xcode-select path..."
 OUTPUT="$(xcode-select -p)"

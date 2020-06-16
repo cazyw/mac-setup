@@ -23,7 +23,7 @@ cd fonts
 cd ..
 rm -rf fonts
 
-# you'll need to manually change the font in the Mac to use e.g. Fira Code
+# you'll need to manually change the font for the iterm to use Fira Code (Preferences > Profile > Text)
 
 echo "Installing spaceship theme..."
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
